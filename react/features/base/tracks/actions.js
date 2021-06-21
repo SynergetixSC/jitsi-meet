@@ -450,6 +450,8 @@ export function trackAdded(track) {
  * }}
  */
 export function trackMutedChanged(track) {
+    logger.log(`track is muted ${track}`);
+
     return {
         type: TRACK_UPDATED,
         track: {
